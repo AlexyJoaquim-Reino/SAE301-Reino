@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMI - Champ </title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel ="shortcut icon" type="./images/mmi.png"/>
+    <script type="text/javascript"></script>
+    
+</head>
+<body>
+
+    <style>
+        .footer {
+        background-color:blue;
+        height:300px;
+        width:400px;
+}
+    </style>
+ 
+    <script type="text/javascript">
+        const image1="./image/barre_accueil.png";
+        const image2="./image/barre_accueil_copie.png";
+        function changeImg(imageElement) { 
+                imageElement.src = imageElement.getAttribute('src')==image1?image2:image1;
+        }
+    </script> 
+
+    <div class="header">
+        <img class="image_logo" src="./image/mmi.png" />
+
+        <a href="#"><img class="barre_accueil" src="./image/barre_accueil.png" onClick="changeimg(this);"/></a>
+
+        <a href="./Actualité.html"><h2> Actualité</h2></a>
+        <a href="./Projet_etudiant.html"><h2> Projets Étudiant</h2></a>
+        <a href="./Programme.html"><h2> Programme </h2></a>
+        <a href="./Contact.html"><h2> Nous contacter </h2></a>
+        <a href="./Internationnal.html"><h2> Internationnal </h2></a>
+
+    </div>
+
+    <script>
+        function changeImg(imageElement) { 
+            imageElement.src = imageElement.getAttribute('src')=="icone_menu.png"?"icone_menu_change.png" : "icone_menu.png";
+        }
+
+        window.onload = function() {
+        var text = document.getElementById("titre");
+        text.style.visibility = "visible";
+    }
+
+        window.onload = function() {
+        var text = document.getElementById("sous_titre");
+        text.style.visibility = "visible";
+    }
+
+        window.onload = function() {
+        var text = document.getElementById("sous_sous_titre");
+        text.style.visibility = "visible";
+    }
+    </script>
+
+    <div id="titre_container">
+        <h1 id="titre"> MMI - Métiers du multimédia et de l'internet </h1>
+    </div>
+
+    <div id="sous-titre_container">
+        <h2 id="sous-titre"> IUT de Marne-La-Vallée - Département de Champ-Sur-Marne </h2>
+    </div>
+
+    <div id="sous_sous-titre_container">
+        <h3 id="sous_sous_titre"> 77420 </h3>
+    </div>
+
+    <div class="footer">
+        <h3> adresse </h3>
+        <h3> réseaux sociaux </h3>
+        <h3> e-mail </h3>
+        <h3> numéro de téléphone </h3>
+        <h3> Adresse de l'IUT </h3>
+    </div>
+
+</body>
+</html>
