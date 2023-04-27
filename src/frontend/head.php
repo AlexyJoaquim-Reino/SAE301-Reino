@@ -9,9 +9,6 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="shortcut icon" href="https://but-mmi-champs.fr/logo/favicon.svg" type="image/x-icon">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-
 <link href="./src/vendor/aos/aos.css" rel="stylesheet">
 <link href="./src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="./src/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">

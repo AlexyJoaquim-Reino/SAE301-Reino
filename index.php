@@ -36,23 +36,23 @@
       <div class="row counters">
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="300" class="purecounter"></span>
-          <p>Etudiants</p>
+          <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="3" class="purecounter"></span>
+          <p> Ans d'existence </p>
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="20" class="purecounter"></span>
-          <p>Salles</p>
+          <span data-purecounter-start="0" data-purecounter-end="1600" data-purecounter-duration="3" class="purecounter"></span>
+          <p>Diplômés</p>
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="15" class="purecounter"></span>
-          <p>Professeurs</p>
+          <span data-purecounter-start="0" data-purecounter-end="2500" data-purecounter-duration="3" class="purecounter"></span>
+          <p>Candidats chaque année </p>
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="7" class="purecounter"></span>
-          <p>Parcours</p>
+          <span data-purecounter-start="0" data-purecounter-end="56" data-purecounter-duration="3" class="purecounter"></span>
+          <p>Places</p>
         </div>
 
       </div>

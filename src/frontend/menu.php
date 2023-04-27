@@ -1,5 +1,4 @@
 <nav class=" navbar navbar-expand-lg sticky-top px-4 bg-body-tertiary">
-
     <a class="navbar-brand amsterdam" href="index"> 
         <img src="assets/logo/logo-but-mmi-champs-black.png" alt="Logo" height="45" class="d-inline-block align-text-top logo">
     </a>
@@ -34,7 +33,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link " href="actus">Actualités</a>
+                <a class="nav-link " href="actualites">Actualités</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="international">À l'international</a>
