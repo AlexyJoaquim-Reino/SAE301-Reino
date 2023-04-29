@@ -43,7 +43,7 @@
 <script src="./src/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
 <script>
-    AOS.init();
+    AOS.init(); // initialiser les animations de data off set //
 </script>
 <script>
     let switchTheme = document.getElementById('switch-theme');

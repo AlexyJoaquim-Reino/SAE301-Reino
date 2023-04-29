@@ -1,3 +1,5 @@
 RewriteEngine On
 RewriteRule ^index/? index.php [NC]
 RewriteRule ^actualites/? src/frontend/actualite.php [NC]
+RewriteRule ^projets/? src/frontend/projet.php
+RewriteRule ^matieres/? src/frontend/matiere.php
