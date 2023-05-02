@@ -45,7 +45,7 @@ include('../database/data.php'); ?>
                 <?php
                 $result = getMatieres();
                 foreach ($result as $matiere) { ?>
-                    <div class="col">
+                    <div class="col"> <!-- mettre echo ? !-->
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $matiere['nom_matiere']; ?></h5>

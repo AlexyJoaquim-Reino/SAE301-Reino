@@ -53,4 +53,5 @@ include('../database/data.php'); ?>
     </main>
     <?php include 'footer.php'; ?>
 </body>
+
 </html>

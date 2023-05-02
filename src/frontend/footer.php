@@ -13,14 +13,7 @@
                     <li><a href="login">Back-office</a></li>
                 </ul>
             </div>
-            <!-- Colonne "Besoin d'aide" -->
-            <div class="col">
-                <h3>Besoin d'aide</h3>
-                <ul class="ps-0">
-                    <li><a href="faq">FAQ</a></li>
-                    <li><a href="conseils">Nos conseils</a></li>
-                </ul>
-            </div>
+
             <!-- Colonne "Contact" -->
             <div class="col">
                 <h3>Contact</h3>
@@ -33,7 +26,7 @@
         </div>
     </div>
     <div class="container d-flex flex-column flex-lg-row justify-content-center pt-5">
-        © 2023 - BUT MÉTIERS DU MULTIMÉDIA ET DE L'INTERNET, CHAMPS-SUR-MARNE
+        BUT-MMI-Champs © 2023 par Alexy Reino
     </div>
 </footer>
 
