@@ -1,6 +1,21 @@
+#frontend
 RewriteEngine On
 RewriteRule ^index/? index.php [NC]
 RewriteRule ^actualites/? src/frontend/actualite.php [NC]
+RewriteRule ^details/? src/frontend/details.php [NC]
 RewriteRule ^projets/? src/frontend/projet.php
 RewriteRule ^matieres/? src/frontend/matiere.php
 RewriteRule ^international/? src/frontend/international.php
+
+#backoffice
+RewriteRule ^backoffice/? src/backoffice/backoffice.php
+RewriteRule ^login/? src/backoffice/login.php [NC]
+RewriteRule ^controller_login/? src/backoffice/controller_login.php [NC]
+RewriteRule ^gestion_actualite/? src/backoffice/gestion_actualite.php [NC]
+RewriteRule ^gestion_projet/? src/backoffice/gestion_projet.php [NC]
+RewriteRule ^gestion_utilisateur/? src/backoffice/gestion_utilisateur.php [NC]
+RewriteRule ^register_actualite/? src/backoffice/register_actualite.php [NC]
+RewriteRule ^supprimer_actualite/? src/backoffice/supprimer_actualite.php [NC]
+RewriteRule ^modifier_actualite/? src/backoffice/modifier_actualite.php [NC]
+RewriteRule ^page_modifier_actualite/? src/backoffice/page_modifier_actualite.php [NC]
+

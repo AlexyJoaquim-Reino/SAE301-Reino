@@ -21,14 +21,14 @@
 <body>
     <?php include 'menu.php'; ?>
     <div class="container mb-5 mt-2">
-        <main class='d-flex flex-column justify-conte,t-center'>
+        <main class='d-flex flex-column justify-content-center'>
             <nav aria-label="breadcrumb" class="mt-5">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index">Accueil</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Actualités</li>
                 </ol>
             </nav>
-            <div class="row row-cols-1 row-cols-md-3">
+            <div class="row row-cols-3 row-cols-md-3">
                 <?php
                 $result = getArticles();
                 foreach ($result as $actu) {  // $actu = une table de la base de donnée
@@ -37,8 +37,8 @@
                         <div class="card h-100" style="width: 18rem;">
                             <img class="card-img-top sameImage" <?php echo "src='assets/image/" . $actu['miniature_article'] . " '" ?> alt="Image">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $actu['nom_article']; ?></h5>
-                                <p class="card-text"><?php echo $actu['contenu_article']; ?></p>
+                                <h5 class="card-title"> <a href=<?php echo 'details?id='.$actu['id_article']?> > <?php echo $actu['nom_article']; ?></a></h5>
+                                <p class="card-text"><?php echo $actu['synopsis']; ?></p>
                                 <footer class="blockquote-footer"><cite title="Source Title"><?php echo $actu['auteur']; ?></cite></footer>
                             </div>
                         </div>
@@ -51,10 +51,6 @@
     </div>
 </body>
 
-<main>
-
-
-</main>
 <?php include 'footer.php'; ?>
 
 </html>
