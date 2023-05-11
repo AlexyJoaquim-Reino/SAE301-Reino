@@ -5,6 +5,11 @@
 <head>
     <?php include('head.php');
     include '../database/data.php';
+
+    if(!isset($_SESSION["name"])){
+        Header("Location: login");
+   }
+
     ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +33,10 @@
         #imageArroundie {
             border-radius: 100px;
         }
+
+        #linktohome{
+            color: white;
+        }
     </style>
 </head>
 
@@ -35,9 +44,10 @@
     <br>
     <center>
         <img src="assets/logo/logo-but-mmi-champs-black.png" height="100px" width="180px" alt="">
-        <br>
+        <br> <br>
         <h3>Bienvenue dans votre tableau de bord, <?php echo $_SESSION['name']  ?> </h1>
-            <br>
+            <div class="btn btn-primary my-4"> <a id="linktohome" href="logout">Retour à l'accueil</a> </div>
+
             <main class='d-flex flex-column justify-content-center'>
                 <div class="row row-cols-4 row-cols-md-4">
                     <div class="container mb-5">

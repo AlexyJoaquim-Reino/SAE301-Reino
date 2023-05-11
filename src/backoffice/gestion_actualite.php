@@ -29,7 +29,7 @@
 <input class="form-control" required type="text" name="synopsis" id="">
 
 <label class="form-label" for="image">Image</label>
-<input class="form-control" type="file" accept ="image/*" name="image" id="">
+<input class="form-control" type="file" accept ="image/*" name="image" id="" required>
 
 <label class="form-label" for="contenu">Contenu*</label>
 <textarea required name="contenu" id="" cols="30" rows="10"></textarea>
@@ -41,7 +41,8 @@
 
     echo '<div class="w-75 m-auto"><h2 class="mt-5 mb-2 text-center">Liste des articles</h2>';
     
-        if ($_SESSION['articles'] == 1) {
+        if ($_SESSION['articles'] == 1) {   
+            /* Il faudra me réexpliquer le code qui permet de savoir si on voit un élément (quand c'est = à 1) ou si on ne peut pas le voir (quand c'est = à 0) */
             echo '<table class="table table-bordered table-striped px-5 ">';
             foreach (getArticles() as $article) {
                 echo "

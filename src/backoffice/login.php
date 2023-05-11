@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include('head.php');
     include '../database/data.php';
+
+    if(isset($_SESSION["name"])){
+         Header("Location: backoffice");
+    }
     ?>
     <title>Connexion | BackOffice</title>
 
