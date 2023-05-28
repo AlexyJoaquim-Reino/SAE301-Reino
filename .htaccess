@@ -25,5 +25,6 @@ RewriteRule ^page_modifier_projet/? src/backoffice/page_modifier_projet.php [NC]
 RewriteRule ^register_utilisateur? src/backoffice/register_utilisateur.php [NC]
 RewriteRule ^modifier_utilisateur/? src/backoffice/modifier_utilisateur.php [NC]
 RewriteRule ^page_modifier_utilisateur/? src/backoffice/page_modifier_utilisateur.php [NC]
+RewriteRule ^mentions_legales/? src/frontend/mentions_legales.php [NC]
 RewriteRule ^logout/? src/backoffice/logout.php [NC]
 

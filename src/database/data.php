@@ -80,6 +80,7 @@ function login($login, $password)
     if ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
         if (hash_equals($hashpass, $result['mdp'])) {
             $_SESSION['name'] = $result['nom'];
+            $_SESSION['photo_profil'] = $result['photo_profil'];
             $_SESSION['projets'] = $result['role_projets']; //1=peut voir les projets, 0=ne peut pas les voir
             $_SESSION['articles'] = $result['role_articles'];
             $_SESSION['admin'] = $result['role_admin'];
@@ -93,17 +94,22 @@ function login($login, $password)
 }
 
 //ajouter un nouvel utilisateur
-function addUser($name, $login, $mail, $pass, $bio, $art=null, $proj=null, $admin=null)
+function addUser($name, $login, $mail, $pass, $bio, $photo_profil, $art = null, $proj = null, $admin = null)
 {
+    //raccourcir le chemin qui sera renvoyé
+    $target_dir = str_replace("\src\database", "", dirname(__FILE__)) . '/assets/image/';
+    $target_file = $target_dir . basename($photo_profil['name']);
+    move_uploaded_file($photo_profil['tmp_name'], $target_file);
     $db = connectToDB();
     $hash = crypt($pass, 'reinopassword');
-    $query = "INSERT INTO utilisateur (nom, login, mdp,mail, bio, role_articles, role_projets, role_admin) VALUES (:nom, :login, :mdp, :mail, :bio, :role_articles, :role_projets, :role_admin)";
+    $query = "INSERT INTO utilisateur (nom, login, mdp,mail, bio, photo_profil, role_articles, role_projets, role_admin) VALUES (:nom, :login, :mdp, :mail, :bio, :photo_profil, :role_articles, :role_projets, :role_admin)";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom", $name, PDO::PARAM_STR);
     $stmt->bindValue(":login", $login, PDO::PARAM_STR);
     $stmt->bindValue(":mdp", $hash, PDO::PARAM_STR);
     $stmt->bindValue(":mail", $mail, PDO::PARAM_STR);
     $stmt->bindValue(":bio", $bio, PDO::PARAM_STR);
+    $stmt->bindValue(":photo_profil", basename($photo_profil['name']), PDO::PARAM_STR);
     $stmt->bindValue(":role_articles", $art, PDO::PARAM_INT);
     $stmt->bindValue(":role_projets", $proj, PDO::PARAM_INT);
     $stmt->bindValue(":role_admin", $admin, PDO::PARAM_INT);
@@ -122,13 +128,17 @@ function getUsers()
 }
 
 //modifier un utilisateur
-function editUser($id, $name, $bio, $art=null, $proj=null, $admin=null)
+function editUser($id, $name, $bio, $photo_profil, $art = null, $proj = null, $admin = null)
 {
+    $target_dir = str_replace("\src\database", "", dirname(__FILE__)) . '/assets/image/';
+    $target_file = $target_dir . basename($photo_profil['name']);
+    move_uploaded_file($photo_profil['tmp_name'], $target_file);
     $db = connectToDB();
-    $query = "UPDATE utilisateur SET nom=:nom, bio=:bio, role_articles=:role_articles, role_projets=:role_projets, role_admin=:role_admin WHERE id=:id";
+    $query = "UPDATE utilisateur SET nom=:nom, bio=:bio, photo_profil=:photo_profil, role_articles=:role_articles, role_projets=:role_projets, role_admin=:role_admin WHERE id=:id";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom", $name, PDO::PARAM_STR);
     $stmt->bindValue(":bio", $bio, PDO::PARAM_STR);
+    $stmt->bindValue(":photo_profil", basename($photo_profil['name']), PDO::PARAM_STR);
     $stmt->bindValue(":role_articles", $art, PDO::PARAM_INT);
     $stmt->bindValue(":role_projets", $proj, PDO::PARAM_INT);
     $stmt->bindValue(":role_admin", $admin, PDO::PARAM_INT);

@@ -596,8 +596,8 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  max-width: 50%;
+  height: 50%;
 }
 
 .img-thumbnail {
@@ -6918,6 +6918,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+  color:lightblue !important;
 }
 
 .stretched-link::after {

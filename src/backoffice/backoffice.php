@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,9 +5,9 @@
     <?php include('head.php');
     include '../database/data.php';
 
-    if(!isset($_SESSION["name"])){
+    if (!isset($_SESSION["name"])) {
         Header("Location: login");
-   }
+    }
 
     ?>
     <meta charset="UTF-8">
@@ -16,6 +15,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil | BackOffice</title>
     <style>
+        .potoprofil {
+            border-radius: 50%;
+        }
+
         .card {
             width: 190px;
             height: 254px;
@@ -34,7 +37,7 @@
             border-radius: 100px;
         }
 
-        #linktohome{
+        #linktohome {
             color: white;
         }
     </style>
@@ -43,41 +46,45 @@
 <body>
     <br>
     <center>
-        <img src="assets/logo/logo-but-mmi-champs-black.png" height="100px" width="180px" alt="">
+        <img src="assets/logo/logo-but-mmi-champs-black.png" height="100px" width="180px" alt="Logo MMI noir">
+        <br> <br> <img src="<?php echo  'assets/image/' . $_SESSION['photo_profil']  ?>" class="potoprofil" height="80px" width="80px" alt="Photo de profil">
+        <span><?php echo  $_SESSION['name']  ?></span>
+
+
         <br> <br>
-        <h3>Bienvenue dans votre tableau de bord, <?php echo $_SESSION['name']  ?> </h1>
-            <div class="btn btn-primary my-4"> <a id="linktohome" href="logout">Retour à l'accueil</a> </div>
+        <h1>Bienvenue dans votre tableau de bord, <?php echo $_SESSION['name']  ?> </h1>
+        <div class="btn btn-primary my-4"> <a id="linktohome" href="logout">Retour à l'accueil</a> </div>
 
-            <main class='d-flex flex-column justify-content-center'>
-                <div class="row row-cols-4 row-cols-md-4">
-                    <div class="container mb-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <center><img id='imageArroundie' src="assets/image/projet_desc.webp" height="90px" width="90px" alt=""></center>
-                                <h5 class="card-title"><a href="gestion_actualite">Gérer les actualités</a></h5>
-                                <p class="card-text">Ajoutez, modifiez et supprimez des actualités.</p>
-                            </div>
+        <main class='d-flex flex-column justify-content-center'>
+            <div class="row row-cols-4 row-cols-md-4">
+                <div class="container mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <center><img id='imageArroundie' src="assets/image/projet_desc.webp" height="90px" width="90px" alt="Paramètre"></center>
+                            <h5 class="card-title"><a href="gestion_actualite">Gérer les actualités</a></h5>
+                            <p class="card-text">Ajoutez, modifiez et supprimez des actualités.</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="container mb-5">
-                        <div class="card">
-                            <center><img id='imageArroundie' src="assets/image/projet_desc.webp" height="90px" width="90px" alt=""></center>
-                            <h5 class="card-title"> <a href="gestion_projet">Gérer les projets</a> </h5>
-                            <p class="card-text">Ajoutez, modifiez et supprimez des projets.</p>
-                        </div>
+                <div class="container mb-5">
+                    <div class="card">
+                        <center><img id='imageArroundie' src="assets/image/projet_desc.webp" height="90px" width="90px" alt="Paramètre"></center>
+                        <h5 class="card-title"> <a href="gestion_projet">Gérer les projets</a> </h5>
+                        <p class="card-text">Ajoutez, modifiez et supprimez des projets.</p>
                     </div>
+                </div>
 
 
-                    <div class="container mb-5">
-                        <div class="card">
-                            <center><img id='imageArroundie' src="assets/image/projet_desc.webp" height="90px" width="90px" alt=""></center>
-                            <h5 class="card-title"><a href="gestion_utilisateur">Gérer les utilisateurs</a></h5>
-                            <p class="card-text">Ajoutez, modifiez et supprimez des utilisateurs.</p>
-                        </div>
+                <div class="container mb-5">
+                    <div class="card">
+                        <center><img id='imageArroundie' src="assets/image/projet_desc.webp" height="90px" width="90px" alt="Paramètre"></center>
+                        <h5 class="card-title"><a href="gestion_utilisateur">Gérer les utilisateurs</a></h5>
+                        <p class="card-text">Ajoutez, modifiez et supprimez des utilisateurs.</p>
                     </div>
+                </div>
 
-            </main>
+        </main>
     </center>
 </body>
 

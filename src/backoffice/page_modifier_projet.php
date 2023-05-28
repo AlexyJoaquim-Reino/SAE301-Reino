@@ -18,7 +18,7 @@ $projet = getProjetDetails($_GET['id']);
 <body>
     <form action="modifier_projet" method="post" enctype="multipart/form-data">
         <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
-            <h2 class="mt-5 mb-2">Modifier un projet</h2>
+            <h1 class="mt-5 mb-2">Modifier un projet</h1>
 
             <label class="form-label" for="nom_projet">Nom du projet*</label>
             <input class="form-control" required type="text" name="nom_projet" id="" value="<?php echo (($projet['nom_projet'])); ?>">

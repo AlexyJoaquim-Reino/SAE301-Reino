@@ -109,7 +109,7 @@
     <center>
         <form class="form" action="controller_login" method="post">
             <div class="mb-3 container mt-50 d-flex flex-column justify-content-center align-items-center w-100">
-                <p class="form-title">Connectez-vous au backoffice</p>
+                <h1 class="form-title">Connectez-vous au backoffice</h1>
                 <?php if (isset($_GET['err'])) {
                     if ($_GET['err'] == 'login') {
                         echo '<p style="color: red;">Vos identifiants sont incorrects, veuillez réessayer.</p>';

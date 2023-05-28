@@ -48,7 +48,7 @@ include('../database/data.php'); ?>
                     <div class="col"> <!-- mettre echo ? !-->
                         <div class="card h-100">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $matiere['nom_matiere']; ?></h5>
+                                <h1 class="card-title"><?php echo $matiere['nom_matiere']; ?></h1>
                                 <hr>
                                 <p class="card-text"><?php echo $matiere['description']; ?></p>
                             </div>

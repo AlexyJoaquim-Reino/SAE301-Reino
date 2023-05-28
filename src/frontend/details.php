@@ -35,7 +35,7 @@
             </nav>
             <p>
 
-                <img class="card-img-top sameImage" <?php echo "src='assets/image/" . $result['miniature_article'] . " '" ?> alt="Image">
+                <img class="card-img-top sameImage" <?php echo "src='assets/image/" . $result['miniature_article'] . " '" ?> alt="Détails actualité">
             <h1><?php echo $result['nom_article']; ?></h1>
 
             <p><?php echo $result['synopsis']; ?></p>

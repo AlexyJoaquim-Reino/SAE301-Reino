@@ -19,7 +19,7 @@ $user = getUserDetails($_GET['id']);
 <body>
     <form action="modifier_utilisateur" method="post" enctype="multipart/form-data">
         <center>
-            <h2 class="mt-5 mb-2">Modifier un utilisateur</h2>
+            <h1 class="mt-5 mb-2">Modifier un utilisateur</h1>
         </center>
 
         <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
@@ -29,6 +29,9 @@ $user = getUserDetails($_GET['id']);
 
             <label class="form-label" for="bio">Bio*</label>
             <input class="form-control" required type="text" name="bio" id="" value="<?php echo (($user['bio'])); ?>">
+
+            <label class="form-label" for="photo_profil">Photo de profil*</label>
+            <input class="form-control" required type="file" name="photo_profil" id="" required>
 
             <fieldset>
                 <legend>Permissions</legend>

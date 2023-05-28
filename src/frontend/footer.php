@@ -2,26 +2,25 @@
     <div class="container d-flex flex-column flex-lg-row justify-content-between">
         <div class="w-30">
             <!-- Logo -->
-            <img src="assets/logo/logo-but-mmi-champs-black.png" class="img-fluid logo" alt="">
+            <img src="assets/logo/logo-but-mmi-champs-black.png" class="img-fluid logo" alt="logo">
         </div>
         <div class='d-flex flex-column flex-lg-row'>
             <!-- Colonne "A propos" -->
             <div class="col">
                 <ul class="ps-0">
-                    <li><a href="a-propos">À propos</a></li>
-                    <li><a href="mentions">Mentions légales</a></li>
+                    <li><a href="mentions_legales">Mentions légales</a></li>
                     <li><a href="login">Back-office</a></li>
                 </ul>
             </div>
 
             <!-- Colonne "Contact" -->
             <div class="col">
-                <h3>Contact</h3>
+                <h1>Contact</h1>
                 <p><b>Adresse</b> : 2 Rue Albert Einstein, 77420 Champs-sur-Marne</p>
                 <p><b>E-mail</b> : mmi-dir.iut@univ-eiffel.fr</p>
                 <p><b>Téléphone</b> : 01 60 95 85 85</p>
-                <p><a href="https://www.instagram.com/mmi_champs/" target="_blank"><span class="visually-hidden">lien page instagram</span><i class="bi bi-instagram"></i> @mmi_champs</a></p>
-                <p><a href="https://twitter.com/MMI_Champs" target="_blank"><span class="visually-hidden">lien page twitter</span><i class="bi bi-twitter"></i>@MMI_Champs</a></p>
+                <p><a href="https://www.instagram.com/mmi_champs/" target="_blank"><span class="visually-hidden" style="color:cadetblue;">lien page instagram</span><i class="bi bi-instagram"></i> @mmi_champs</a></p>
+                <p><a href="https://twitter.com/MMI_Champs" target="_blank"><span class="visually-hidden" style="color:cadetblue;">lien page twitter</span><i class="bi bi-twitter"></i>@MMI_Champs</a></p>
             </div>
         </div>
     </div>

@@ -322,12 +322,6 @@
 }
 
 
-/*
- * Description for mobiles
- * something like facebook does the description
- * for the photos
-*/
-
 .glightbox-mobile .glightbox-container .gslide-description {
   height: auto !important;
   width: 100%;
@@ -498,7 +492,6 @@ iframe.wait-autoplay {
 }
 
 
-/*Skin */
 
 .glightbox-clean .gslide-description {
   background: #fff;

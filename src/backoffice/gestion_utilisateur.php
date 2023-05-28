@@ -14,12 +14,12 @@
 </head>
 
 <body>
- <center> <h2 class="mt-5 mb-2">Ajouter un utilisateur</h2> </center>
+ <center> <h1 class="mt-5 mb-2">Ajouter un utilisateur</h1> </center>
     <?php
 
     if ($_SESSION['admin'] == 1) {
         echo '
-        <form action="register_utilisateur" method="post">
+        <form action="register_utilisateur" method="post" enctype="multipart/form-data">
     
         <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
            
@@ -29,8 +29,18 @@
             <input class="form-control" required type="text" name="login">
             <label class="form-label" for="mail">Adresse email*</label>
             <input class="form-control" required type="text" name="mail">
+            <label class="form-label" for="photo_profil">Photo de profil*</label>
+            <input class="form-control" required type="file"   accept ="image/*" required name="photo_profil">
             <label class="form-label" for="mdp">Mot de passe*</label>
-            <input class="form-control" required type="password" name="mdp">  
+            <input class="form-control" required type="password" name="mdp">
+            <label class="form-label" for="mdp">Confirmation du mot de passe*</label>
+            <input class="form-control" required type="password" name="mdp">
+            <ul> 
+            Recommandations:
+            <li>Au moins une majuscule </li>
+            <li>Au moins un caractère spécial ($@"...) </li>
+            <li>Au moins un chiffre</li>
+            </ul>
             <label class="form-label" for="bio">Bio</label>
             <textarea name="bio" id="" cols="30" rows="10"></textarea>
            

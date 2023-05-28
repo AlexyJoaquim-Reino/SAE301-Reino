@@ -30,9 +30,8 @@
 
   </section>
 
-  <section id="counts" class="counts">
+  <section id="counts" class="counts1">
     <div class="container">
-
       <div class="row counters">
 
         <div class="col-lg-3 col-6 text-center">
@@ -98,5 +97,15 @@
 
   </section>
 
+  <script>
+    // Stockez l'ID de l'intervalle dans une variable
+    var intervalID = setInterval(function() {
+      // Code de rafraîchissement automatique ici
+    }, 5000); // Exemple : rafraîchissement toutes les 5 secondes (5000 millisecondes)
+
+    // Pour arrêter le rafraîchissement automatique, utilisez clearInterval()
+    clearInterval(intervalID);
+  </script>
+  
   <?php include 'src/frontend/footer.php'; ?>
 </body>

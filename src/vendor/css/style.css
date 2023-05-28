@@ -135,12 +135,7 @@ h6 {
   max-height: 40px;
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+
 .navbar {
   padding: 0;
 }
@@ -297,9 +292,7 @@ h6 {
   }
 }
 
-/**
-* Mobile Navigation 
-*/
+
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -533,9 +526,9 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
+/*
 # Sections General
---------------------------------------------------------------*/
+*/
 section {
   padding: 100px 0;
   overflow: hidden;
@@ -574,9 +567,8 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+
+
 .about {
   padding: 120px 0;
 }
@@ -631,12 +623,31 @@ section {
   top: 12px;
 }
 
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
+
+
 .counts {
   background: linear-gradient(90deg, rgba(88, 70, 249, 0.5) 0%, rgba(123, 39, 216, 0.5) 100%), url("https://image.noelshack.com/fichiers/2023/16/1/1681762007-counts-bg.png") center center no-repeat;
   padding: 80px 0 60px 0;
+}
+
+.counts1 {
+  background: linear-gradient(90deg, rgba(88, 70, 249, 0.5) 0%, rgba(160, 0, 0, 0.5) 100%);
+  padding: 80px 0 60px 0;
+}
+
+.counts1 .counters span {
+  font-size: 48px;
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.counts1 .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .counts .counters span {
@@ -654,9 +665,8 @@ section {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
+
+
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
@@ -786,9 +796,7 @@ section {
   fill: #11dbcf;
 }
 
-/*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
+
 .features .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
@@ -814,9 +822,8 @@ section {
   min-height: 400px;
 }
 
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
+
+
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -904,9 +911,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -1029,9 +1034,8 @@ section {
   bottom: calc(50% - 50px);
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
+
+
 .portfolio-details {
   padding-top: 40px;
 }
@@ -1094,9 +1098,7 @@ section {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
+
 .pricing .box {
   padding: 20px;
   background: #fff;
@@ -1204,9 +1206,8 @@ section {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
+
+
 .faq {
   background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);
 }
@@ -1421,9 +1422,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
+/*
 # Breadcrumbs
---------------------------------------------------------------*/
+*/
 .breadcrumbs {
   padding: 15px 0;
   background: #f2f6f9;
@@ -1476,9 +1477,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
+/*
 # Footer
---------------------------------------------------------------*/
+*/
 #footer {
   color: #fff;
   font-size: 14px;
