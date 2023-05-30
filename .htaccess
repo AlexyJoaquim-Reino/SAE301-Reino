@@ -1,11 +1,14 @@
 #frontend
 RewriteEngine On
+ErrorDocument 404 http://reino-joaquim-alexy.jlnm7038.odns.fr/
+
 RewriteRule ^index/? index.php [NC]
 RewriteRule ^actualites/? src/frontend/actualite.php [NC]
 RewriteRule ^details/? src/frontend/details.php [NC]
 RewriteRule ^projets/? src/frontend/projet.php
 RewriteRule ^matieres/? src/frontend/matiere.php
 RewriteRule ^international/? src/frontend/international.php
+RewriteRule ^error404/? src/frontend/error404.php [NC]
 
 #backoffice
 RewriteRule ^backoffice/? src/backoffice/backoffice.php
