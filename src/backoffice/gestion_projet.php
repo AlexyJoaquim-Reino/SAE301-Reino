@@ -24,31 +24,31 @@
 <h1 class="mt-5 mb-2">Ajouter un projet</h1>
 
 <label class="form-label" for="nom_projet">Nom du projet*</label>
-<input class="form-control" required type="text" name="nom_projet" id="">
+<input class="form-control" required type="text" name="nom_projet" id="nom_projet">
 
 <label class="form-label" for="description">Description*</label>
-<input class="form-control" required type="text" name="description" id="">
+<input class="form-control" required type="text" name="description" id="description">
 
 <label class="form-label" for="date_debut_projet">Date de début</label>
-<input class="form-control" required type="date" name="date_debut_projet" id="">
+<input class="form-control" required type="date" name="date_debut_projet" id="date_debut_projet">
 
 <label class="form-label" for="date_fin_projet">Date de fin</label>
-<input class="form-control" required type="date" name="date_fin_projet" id="">
+<input class="form-control" required type="date" name="date_fin_projet" id="date_fin_projet">
 
 <label class="form-label" for="niveau">Niveau</label>
-<input class="form-control" required type="text" name="niveau" id="">
+<input class="form-control" required type="text" name="niveau" id="niveau">
 
 <label class="form-label" for="etudiants">Étudiant(s)*</label>
-<input class="form-control" required type="text" name="etudiants" id="">
+<input class="form-control" required type="text" name="etudiants" id="etudiants">
 
-<label class="form-label" for="img_projet">Image</label>
-<input class="form-control" type="file" accept ="image/*" name="img_projet" id="" required>   
+<label class="form-label" for="img_projet">Image*</label>
+<input class="form-control" type="file" accept ="image/*" name="img_projet" id="img_projet" required>   
 
 <label class="form-label" for="iframe_projet">Lien de la vidéo</label>
-<input class="form-control" type="text" name="iframe_projet" id="">
+<input class="form-control" type="text" name="iframe_projet" id="iframe_projet" placeholder="https://www.example.com" required pattern="https?://.+">
 
 <label class="form-label" for="lien">Lien</label>
-<input class="form-control" type="text" name="lien" id="">
+<input class="form-control" type="link" name="lien" id="lien" placeholder="https://www.example.com" required pattern="https?://.+">
 
 <input class="btn btn-primary my-4" type="submit" value="Enregistrer">
 </div>

@@ -29,27 +29,32 @@
 
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
                         <h1 class='display-6 '>What's M.M.I ?</h1>
-                        <p>The Multimedia and Internet (BUT MMI) is a 3-year programme that aims to develop multidisciplinary skills to train for multimedia jobs.
-                            This course is given in Champs sur Marne near Paris.
-                            Combining theory and practice, the course offers to develop skills in programming, graphics and communication.
-                            The course lasts offers 2600 hours of teaching over its duration. During the second year, students can choose to focus on digital creation or web development.
+                        <p>
+                        The Multimedia and Internet program (BUT MMI) is a three-year curriculum situated in Champs sur Marne, in close proximity 
+                        to Paris. With a strong emphasis on multidisciplinary proficiency, this program equips students with the necessary skills 
+                        to excel in the dynamic field of multimedia. By seamlessly integrating theoretical knowledge with hands-on practical 
+                        training, BUT MMI offers a holistic approach to learning, fostering expertise in programming, graphics, and communication.
+                        Boasting a comprehensive duration of 2600 teaching hours, this program ensures an extensive educational experience. In the
+                        second year, students have the opportunity to specialize in either digital creation or web development, further refining their 
+                        expertise in their chosen field.
                         </p>
 
                         <h2 class="sous_titre"> About the program briefly </h2>
                         <p>
-                            The MMI program trains you for careers in web development, back-end development,
-                            UX design, web marketing, and audiovisual production. This education provides you
-                            with sufficient knowledge and skills to enter the professional world or continue
-                            your studies in a master's program.
+                        The MMI program prepares individuals for diverse professional paths in the realm of web development, 
+                        back-end development, UX design, web marketing, and audiovisual production. This comprehensive 
+                        education equips students with a robust foundation of knowledge and skills, positioning them favorably
+                        to embark upon their chosen career trajectories or pursue further studies at the master's level.
                         <p>
-                            In MMI, you have two courses : Web Development and Numeric Creation.
+                            Within the MMI program, two distinct courses are offered: Web Development and Numeric Creation.
                         </p>
                         <p>
-                            The 3rd years is specially reserved to alternation. So can work 1 week per month at University and 3 in bussiness OR 1 day per week at University and 4 days per
-                            week in a bussiness
+                            The third year of the program is specifically dedicated to an alternating work-study arrangement. This 
+                            allows students to engage in practical experience by working either one week per month at the university
+                            and three weeks in a business setting, or one day per week at the university and four days per week in a business environment. 
                         </p>
                         <p>
-                            Also, in the 4th semester, you can specialize in web development or digital creation while living an enriching and unique experience. We send a few students to our partner institutions in Canada too ! 
+                            Also, in the fourth semester, you have the option to specialize in either web development or digital creation, which offers a valuable and distinctive experience. Moreover, we send a few students to our partner institutions in Canada, providing them with an exciting opportunity to broaden their horizons and gain international exposure 
                         </p>
 
                         <a href="https://www.univ-gustave-eiffel.fr/en/international/international-students" class="link">Find out more about the admission requirements here</a>
@@ -66,12 +71,13 @@
                         <img class="img-fluid" src="assets/image/School.png" alt="School">
                     </div>
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
-                        <h2 class='display-6 '>How to access into the school (as a normal student)</h2>
+                        <h2 class='display-6 '>The admission process for enrollment as a regular student in the school is as follows:</h2>
                         <p>
-                            Prepare your application documents: to apply for the BUT MMI course at Gustave Eiffel, you will
-                            need to fill in an online application form and provide documents such as your high school diploma, a copy of your
-                            passport, proof of your French language level (TOEFL or DELF/DALF) and a CV.
-                    </p>
+                            To apply as a regular student for the BUT MMI course at Gustave Eiffel, you must complete an 
+                            online application form and submit the required documents. These documents include your high 
+                            school diploma, a copy of your passport, evidence of your proficiency in French language (TOEFL 
+                            or DELF/DALF), and a comprehensive curriculum vitae (CV).
+                        </p>
 
                         <br>
                             <a href="https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9908" class="link">Find out more about the admission requirements here</a>
@@ -85,11 +91,15 @@
                 <div class="row">
 
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
-                        <h2 class='display-6 '>How to access into the school (as a foreign student) </h2>
+                        <h2 class='display-6 '>The process for admission as a foreign student to the school is as follows: </h2>
                         <p>
-                            For a foreign student : Prepare your application documents: to apply for the BUT MMI course at Gustave Eiffel, you will
-                            need to fill in an online application form and provide documents such as your high school diploma, a copy of your
-                            passport, proof of your French language level (TOEFL or DELF/DALF) and a CV.
+                            In order to apply for the BUT MMI course at Gustave Eiffel as a foreign student, you must prepare
+                             your application documents accordingly. This entails completing an online application form and 
+                             submitting essential documents, including your high school diploma, a copy of your passport, 
+                             proof of your proficiency in the French language (TOEFL or DELF/DALF), and a comprehensive 
+                             curriculum vitae (CV) detailing your educational background and relevant experiences. It is 
+                             imperative to ensure that you adhere to the specified requirements and deadlines for 
+                             international applicants.
                         </p>
 
                         <p>

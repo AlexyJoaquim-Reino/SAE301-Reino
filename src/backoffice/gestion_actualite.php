@@ -23,16 +23,16 @@
 <h1 class="mt-5 mb-2">Ajouter un article</h1>
 
 <label class="form-label" for="titre">Titre*</label>
-<input class="form-control" required type="text" name="titre" id="">
+<input class="form-control" required type="text" name="titre" id="titre">
 
 <label class="form-label" for="synopsis">Synopsis*</label>
-<input class="form-control" required type="text" name="synopsis" id="">
+<input class="form-control" required type="text" name="synopsis" id="synopsis">
 
 <label class="form-label" for="image">Image</label>
-<input class="form-control" type="file" accept ="image/*" name="image" id="" required>
+<input class="form-control" type="file" accept ="image/*" name="image" id="image" required>
 
 <label class="form-label" for="contenu">Contenu*</label>
-<textarea required name="contenu" id="" cols="30" rows="10"></textarea>
+<textarea required name="contenu" id="contenu" cols="30" rows="10"></textarea>
 
 <input class="btn btn-primary my-4" type="submit" value="Enregistrer">
 </div>

@@ -5,9 +5,9 @@ body {
 }
 
 a {
-  color: #c0b9ff;
   text-decoration: none;
 }
+
 
 a:hover {
   color: #8577fb;

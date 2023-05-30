@@ -20,15 +20,15 @@ $article = getArticleDetails($_GET['id']);
     <h1 class="mt-5 mb-2">Modifier un article</h1>
    
     <label class="form-label" for="titre">Titre*</label>
-    <input class="form-control" required type="text" name="titre" id="" value="<?php echo(($article['nom_article'])); ?>">
+    <input class="form-control" required type="text" name="titre" id="titre" value="<?php echo(($article['nom_article'])); ?>">
     
     <label class="form-label" for="titre">Synopsis*</label>
-    <input class="form-control" required type="text" name="synopsis" id="" value="<?php echo(($article['synopsis'])); ?>">
+    <input class="form-control" required type="text" name="synopsis" id="titre" value="<?php echo(($article['synopsis'])); ?>">
 
     <label class="form-label" for="contenu">Contenu*</label>
-    <textarea required name="contenu" id="" cols="30" rows="10"><?php echo(($article['contenu_article'])); ?></textarea>
+    <textarea required name="contenu" id="contenu" cols="30" rows="10"><?php echo(($article['contenu_article'])); ?></textarea>
     
-    <input type="number" name="id" id="" value=<?php echo($_GET['id'])?> style="display: none;">
+    <input type="number" name="id" value=<?php echo($_GET['id'])?> style="display: none;">
     <input class="btn btn-primary my-4" type="submit" value="Modifier">
 </div>
 </form>

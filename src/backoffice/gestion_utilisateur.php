@@ -11,15 +11,31 @@
     <title>Gestion des utilisateurs</title>
     <?php include('head.php'); ?>
 
+    <script>
+        function validateForm() {
+            var mdp = document.getElementById('mdp').value;
+            var confirmmdp = document.getElementById('confirmmdp').value;
+
+            if (mdp != confirmmdp) {
+                alert('Les mots de passe ne se correspondent pas.');
+                return false;
+            }
+
+            return true
+        }
+    </script>
+
 </head>
 
 <body>
- <center> <h1 class="mt-5 mb-2">Ajouter un utilisateur</h1> </center>
+    <center>
+        <h1 class="mt-5 mb-2">Ajouter un utilisateur</h1>
+    </center>
     <?php
 
     if ($_SESSION['admin'] == 1) {
         echo '
-        <form action="register_utilisateur" method="post" enctype="multipart/form-data">
+        <form action="register_utilisateur" id="myForm" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
     
         <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
            
@@ -31,10 +47,15 @@
             <input class="form-control" required type="text" name="mail">
             <label class="form-label" for="photo_profil">Photo de profil*</label>
             <input class="form-control" required type="file"   accept ="image/*" required name="photo_profil">
-            <label class="form-label" for="mdp">Mot de passe*</label>
-            <input class="form-control" required type="password" name="mdp">
-            <label class="form-label" for="mdp">Confirmation du mot de passe*</label>
-            <input class="form-control" required type="password" name="mdp">
+            
+            <label class="form-label" for="mdp">Mot de passe :</label>
+            <input class="form-control" type="password"  name="mdp" id="mdp" required>
+
+            <label class="form-label" for="confirmmdp">Confirmation du mot de passe :</label>
+            <input class="form-control" type="password" name="confirmmdp" id="confirmmdp" required>
+
+            <p class="error-message" style="display: none;">Le mot de passe et la confirmation ne correspondent pas.</p>
+
             <ul> 
             Recommandations:
             <li>Au moins une majuscule </li>
@@ -47,11 +68,11 @@
             <fieldset>
                 <legend>Permissions</legend>
                 <label class="form-check-label" for="role_projets">Projets</label> 
-                <input class="form-check-input" type="checkbox" name="role_projets" id="" value=1><br>
+                <input class="form-check-input" type="checkbox" name="role_projets" id="role_projects" value=1><br>
                 <label class="form-check-label" for="role_articles">Articles</label>
-                <input class="form-check-input" type="checkbox" name="role_articles" id="" value=1><br>
+                <input class="form-check-input" type="checkbox" name="role_articles" id="role_articles" value=1><br>
                 <label class="form-check-label" for="role_admin">Administration</label>
-                <input class="form-check-input" type="checkbox" name="role_admin" id="" value=1><br>
+                <input class="form-check-input" type="checkbox" name="role_admin" id="role_admin" value=1><br>
             </fieldset>
             <input class="btn btn-primary my-4" type="submit" value="Enregistrer">
             </div>
@@ -77,5 +98,21 @@
 
     ?>
 </body>
+
+<script>
+    const passwordInput = document.getElementById("mdp");
+    const confirmPasswordInput = document.getElementById("confirmmdp");
+    const errorMessage = document.querySelector(".error-message");
+
+    function checkPasswordsMatch() {
+        if (passwordInput.value !== confirmPasswordInput.value) {
+            errorMessage.style.display = "block";
+        } else {
+            errorMessage.style.display = "none";
+        }
+    }
+
+    confirmPasswordInput.addEventListener("input", checkPasswordsMatch);
+</script>
 
 </html>

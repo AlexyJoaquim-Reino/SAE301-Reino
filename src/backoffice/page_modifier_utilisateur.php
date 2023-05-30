@@ -25,18 +25,18 @@ $user = getUserDetails($_GET['id']);
         <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
 
             <label class="form-label" for="name">Nom et prénoms*</label>
-            <input class="form-control" required type="text" name="name" id="" value="<?php echo (($user['nom'])); ?>">
+            <input class="form-control" required type="text" name="name" id="name" value="<?php echo (($user['nom'])); ?>">
 
             <label class="form-label" for="bio">Bio*</label>
-            <input class="form-control" required type="text" name="bio" id="" value="<?php echo (($user['bio'])); ?>">
+            <input class="form-control" required type="text" name="bio" id="bio" value="<?php echo (($user['bio'])); ?>">
 
             <label class="form-label" for="photo_profil">Photo de profil*</label>
-            <input class="form-control" required type="file" name="photo_profil" id="" required>
+            <input class="form-control" required type="file" name="photo_profil" id="photo_profil" required>
 
             <fieldset>
                 <legend>Permissions</legend>
                 <label class="form-check-label" for="role_projets">Projets</label>
-                <input class="form-check-input" type="checkbox" name="role_projets" value="1" <?php echo $user['role_projets'] == 1 ? 'checked' : ''; ?>><br>
+                <input class="form-check-input" type="checkbox" name="role_projets" id="" value="1" <?php echo $user['role_projets'] == 1 ? 'checked' : ''; ?>><br>
                 <label class="form-check-label" for="role_articles">Articles</label>
                 <input class="form-check-input" type="checkbox" name="role_articles" id="" value="1" <?php echo $user['role_articles'] == 1 ? 'checked' : ''; ?>><br>
                 <label class="form-check-label" for="role_admin">Administration</label>

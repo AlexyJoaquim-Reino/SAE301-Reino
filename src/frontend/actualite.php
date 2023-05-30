@@ -12,7 +12,6 @@
     <style>
         .sameImage {
             width: 100%;
-            height: 200px;
             object-fit: contain;
         }
     </style>
@@ -37,7 +36,7 @@
                         <div class="card h-100" style="width: 18rem;">
                             <img class="card-img-top sameImage" <?php echo "src='assets/image/" . $actu['miniature_article'] . " '" ?> alt="Actualité">
                             <div class="card-body">
-                                <h1 class="card-title"> <a href=<?php echo 'details?id='.$actu['id_article']?> > <?php echo $actu['nom_article']; ?></a></h1>
+                                <h1 class="card-title"> <a class="other_link" href=<?php echo 'details?id='.$actu['id_article']?> > <?php echo $actu['nom_article']; ?></a></h1>
                                 <p class="card-text"><?php echo $actu['synopsis']; ?></p>
                                 <footer class="blockquote-footer"><cite title="Source Title"><?php echo $actu['auteur']; ?></cite></footer>
                             </div>
