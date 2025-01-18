@@ -2,7 +2,6 @@
 Refonte du site MMI-Champs
 # Projet-SAE301
 ● Un site faisant office de refonte pour le site actuelle du site BUT MMI.<br>
-● Un dépôt Git (l’équipe enseignante sera invitée sur le dépôt)
 
 # Fichier de départ 
 index.php
@@ -15,8 +14,10 @@ index.php
 ● Accéder au répertoire d'importation dans le gestionnaire de fichiers du CPANEL (dans notre cas, c'est public_html/SAE301)<br>
 ● Importer l'archive .zip/.rar en cliquant sur "Charger"<br>
 ● Décompresser l'archive dans le répertoire en choisissant l'option "extract" du fichier compressé<br>
-● Accéder au lien 🎉 <a href="http://reino-joaquim-alexy.jlnm7038.odns.fr/index" href="_BLANK">Site Web</a><br>
+● Accéder au lien 🎉 <a href="sae-301-reino.vercel.app" href="_BLANK">Site Web</a><br>
+
+URL du site : sae-301-reino.vercel.app
 
 # Crédits
-Fait par Alexy REINO
+Fait par Alexy JOAQUIM
 
